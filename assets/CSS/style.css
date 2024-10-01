@@ -3,3 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.main {
+    width: 100vw;
+    margin: auto;
+    background-color: #919194;
+}
+
+.nav-bar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
