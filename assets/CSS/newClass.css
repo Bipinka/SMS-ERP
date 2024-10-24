@@ -1,0 +1,66 @@
+:root {
+    --background-color: #99aee7;
+    --button-color: #ffa256;
+
+    /* border radius */
+    --border-radius-1: .5rem;
+    --border-radius-2: .8rem;
+    --border-radius-3: 1rem;
+    --border-radius-4: 2rem;
+}
+.container {
+    width: 90vw;
+    margin: 20px auto;
+}
+form {
+    height: 55vh;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-3);
+    box-shadow: 0.1px 0.5px 0.5px 2px #e1dfdf;
+}
+fieldset {
+    height: 8vh;
+    width: 90%;
+    text-align: left;
+    border-radius: var(--border-radius-4);
+    margin-top: 2vh;
+}
+legend {
+    margin-left: 1rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius-4);
+    font-size: 0.7em;
+    padding: 0 0.5rem;
+}
+input,select {
+    height: 1rem;
+    width: 98%;
+    font-size: 0.9rem;
+    border-radius: var(--border-radius-4);
+    border: none;
+    padding: 1rem;   
+}
+
+.submit {
+    height: 6vh;
+    min-width: 12vw;
+    background-color: var(--button-color);
+    border-radius: var(--border-radius-4);
+    border: none;
+    padding: 0 1rem;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width < 900px) {
+    form {
+         width: 90vw;
+    }
+}
