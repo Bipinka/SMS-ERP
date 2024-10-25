@@ -1,5 +1,38 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+:root {
+    /* Colors */
+
+    --body-color: #E4E9F7;
+    --primary-color: #;
+    --secondary-color: #;
+    --sidebar-color: #FFFFFF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* Transitions */
+    --tran02: all 0.2s ease;
+    --tran03: all 0.3s ease;
+    --tran04: all 0.4s ease;
+    --tran05: all 0.5s ease;
+
+}
+body {
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+.AllHeader {
+    width: 100vw;
+    margin: auto;
+    background-color: #919194;
+}
+
+.nav-bar {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sideBar {
+    width: 15vw;
+    background-color: var(--sidebar-color);
 }
