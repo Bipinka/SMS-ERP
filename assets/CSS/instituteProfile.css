@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-:root {
-    --background-color: #99aee7;
-    --button-color: #ffa256;
-
-    /* border radius */
-    --border-radius-1: .5rem;
-    --border-radius-2: .8rem;
-    --border-radius-3: 1rem;
-    --border-radius-4: 2rem;
-}
 form {
     width: 92vw;
     margin: auto;
@@ -73,15 +55,7 @@ input,select {
 option {
     border-radius: var(--border-radius-2);
 }
-.submit {
-    height: 6vh;
-    min-width: 12vw;
-    background-color: var(--button-color);
-    border-radius: var(--border-radius-4);
-    border: none;
-    padding: 0 1rem;
-    margin-top: 5vh;
-}
+
 
 
 @media (width > 990px) {
