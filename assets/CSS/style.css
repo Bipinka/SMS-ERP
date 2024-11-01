@@ -6,7 +6,8 @@ body {
 .AllHeader {
     width: 100vw;
     margin: auto;
-    background-color: #919194;
+    position: fixed;
+    background-color: #9e9eaf;
 }
 
 .nav-bar {
@@ -14,8 +15,70 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.schoolDetails h3
+{
+    color: var( --clr-primary-1);
 }
 .sideBar {
-    width: 15vw;
-    background-color: var(--sidebar-color);
+    position: fixed;
+    padding-top: 4rem;
+    width: 14vw;
+    background-color: rgba(214, 209, 209, 0.205);
+    height: 50vw;
+    box-shadow: rgb(158, 157, 157) 1px 1px 1px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  
+
+    
+
+}
+
+.MenuLists li
+{
+   
+   font-family: var(--f-secondary);
+   font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.75rem ;
+    cursor: pointer;
+    align-items: center;
+    grid-area: 1 / 1 ;
+}
+
+li:hover
+{
+    color: var(--clr-primary-1);
+}
+.innerLists,.money
+{
+    display: none;
+}
+.showinnerLists
+{
+    display: block;
+}
+
+.totalstudents
+{
+    position: fixed;
+    height: 7rem;
+    width: 15rem;
+    background-color: rgb(82, 82, 220);
+    margin-left: 15rem;
+    margin-top: 7rem;
+    border-radius: var(--border-radius-4);
+}
+.totalemployees
+{
+    position: fixed;
+    height: 7rem;
+    width: 15rem;
+    background-color: rgb(82, 82, 220);
+    margin-left: 35rem;
+    margin-top: 7rem;
+    border-radius: var(--border-radius-4);
 }
