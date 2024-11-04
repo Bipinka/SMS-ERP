@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-color: var(--body-color);
+    background: #e0e0e0;
 }
 
 .AllHeader {
@@ -28,8 +28,7 @@ body {
     background-color: rgba(214, 209, 209, 0.205);
     height: 50vw;
     box-shadow: rgb(158, 157, 157) 1px 1px 1px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+   
   
 
     
@@ -61,24 +60,54 @@ li:hover
 {
     display: block;
 }
-
+.container
+{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 .totalstudents
 {
-    position: fixed;
+    
     height: 7rem;
     width: 15rem;
-    background-color: rgb(82, 82, 220);
-    margin-left: 15rem;
-    margin-top: 7rem;
+    background: #7a78dd;
     border-radius: var(--border-radius-4);
+    grid-area: 2 / 2 / 3 / 3;
 }
 .totalemployees
 {
-    position: fixed;
+  
     height: 7rem;
     width: 15rem;
-    background-color: rgb(82, 82, 220);
-    margin-left: 35rem;
-    margin-top: 7rem;
+    background: #7a78dd;
     border-radius: var(--border-radius-4);
+    grid-area: 2 / 3 / 3 / 4;
+}
+.totalcourses
+{
+    
+    height: 7rem;
+    width: 15rem;
+    background: #7a78dd;
+    
+    border-radius: var(--border-radius-4);
+    grid-area: 2 / 4 / 3 / 5;
+}
+.calender
+{
+    grid-area: 2 / 5 / 4 / 6;
+}
+.totalstudents:hover,
+.totalemployees:hover,
+.totalcourses:hover
+{
+   
+    
+    box-shadow:  3px 3px 10px #bebdbd,
+                -3px 3px 20px rgb(148, 146, 146);
+    transition: linear 0.2s;
 }
