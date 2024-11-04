@@ -2,22 +2,21 @@
 
 const ctx = document.getElementById('Bar');
 
-let barCharts = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['students', 'staffs','teachers'],
-    datasets: [{
-      label: 'ATTENDENCE OF TODAY',
-      data: [12, 19,15 ],
-      borderWidth: 1,
-      radius:10,
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+  const barChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['STUDENTS', 'TEACHERS', 'STAFFS'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 15],
+        borderWidth: 0.5
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
-});
+  });

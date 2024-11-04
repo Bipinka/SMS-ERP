@@ -73,8 +73,8 @@ li:hover
 }
 .totalstudents
 {
-    position: fixed;
-    height: 7rem;
+   
+    height: 8rem;
     width: 15rem;
     background: #7a78dd;
     border-radius: var(--border-radius-4);
@@ -82,15 +82,34 @@ li:hover
 }
 .totalemployees
 {
-    position: fixed;
-    height: 7rem;
+  
+    height: 8rem;
+    width: 15rem;
+    background: #7a78dd;
+    border-radius: var(--border-radius-4);
+    grid-area: 2 / 3 / 3 / 4;
+}
+.totalcourses
+{
+    
+    height: 8rem;
     width: 15rem;
     background: #7a78dd;
     
     border-radius: var(--border-radius-4);
     grid-area: 2 / 4 / 3 / 5;
 }
-.calender
+.totalstudents:hover,
+.totalemployees:hover,
+.totalcourses:hover
 {
-    grid-area: 2 / 5 / 4 / 6;
-}
+
+    box-shadow:  3px 3px 10px #bebdbd,
+    -3px 3px 20px rgb(148, 146, 146);
+transition: linear 0.2s;
+} 
+
+
+
+
+
