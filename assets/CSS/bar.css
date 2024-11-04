@@ -1,0 +1,15 @@
+.graph-container
+{
+     height: 100%;
+     width: 60rem;
+   margin-left: 15rem;
+   margin-top: -16rem;
+   font-family: var(--ff-secondary);
+   border-radius: var(--boder-radius-3);
+}
+.graph-container:hover
+{
+    box-shadow:  3px 3px 10px #bebdbd,
+    -3px 3px 20px rgb(148, 146, 146);
+transition: linear 0.2s;
+}

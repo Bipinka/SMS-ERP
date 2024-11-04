@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/CSS/bar.css" />
 
     <!-- Font awesome -->
     <link
@@ -42,12 +43,11 @@
 
           <div class="navIcons"></div>
         </div>
-        
       </header>
     </div>
 
     <!-- Body -->
-    
+
     <div class="main">
       <div class="sideBar">
         <div class="MenuLists">
@@ -86,7 +86,7 @@
               Employees
             </li>
             <li>
-               <i class="bx bxs-user-account"></i>
+              <i class="bx bxs-user-account"></i>
               Accounts
               <ul class="money">
                 <li>Fees</li>
@@ -106,11 +106,15 @@
         <div class="totalemployees"></div>
         <div class="totalcourses"></div>
         <div id="calender"></div>
-    </div>
-    
+      </div>
       <!-- Graph -->
-      <div class="Graph-container"></div>
+      <div class="graph-container">
+        <canvas id="Bar"></canvas>
+      </div>
     </div>
-    <script src="./assets/javascript/calender.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/bar.js"></script>
+    
   </body>
 </html>

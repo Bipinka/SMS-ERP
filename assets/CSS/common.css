@@ -91,9 +91,9 @@ button:focus {
     margin-top: 5vh;
 }
 
-.submit {
+/* .submit {
     background-color: var(--button-color);
-}
+} */
 
 /* Reset Button */
 .submit {
