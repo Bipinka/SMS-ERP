@@ -6,6 +6,7 @@
    margin-top: -16rem;
    font-family: var(--ff-secondary);
    border-radius: 10px;
+   background-color: #98d8f158;
 }
 .graph-container:hover
 {
