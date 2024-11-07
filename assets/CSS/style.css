@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     background-color: var(--body-color);
+    scroll-behavior: smooth;
 }
 
 .AllHeader {
@@ -32,37 +33,94 @@ body {
     box-shadow: rgb(158, 157, 157) 1px 1px 1px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  
-
-    
-
 }
 
 .MenuLists li
 {
    
    font-family: var(--f-secondary);
-   font-size: 16px;
+   font-size: 18px;
     text-transform: capitalize;
     display: block;
     padding: 0.75rem ;
     cursor: pointer;
     align-items: center;
     grid-area: 1 / 1 ;
+   border-radius: 0 20px;
+   transition: all ease 0.2s ;
+   
+}
+.MenuLists li:hover
+{
+    background: rgb(101, 101, 243);
+    color: #fff;
+    border-radius: 0 20px;
+  
 }
 
-li:hover
+ .sideBar .MenuLists li .sub-menu 
 {
-    color: rgb(22, 92, 232);
+    text-decoration: none;
+    color: black;
+    background-color: rgb(155, 212, 230);
+    border-radius: 10px 10px;
+    background: transparent;
+    display: none;
+   
 }
-.innerLists,.money
+.sideBar .MenuLists li.showmenu .sub-menu   {
+    display: block;
+    
+}
+
+.sideBar .MenuLists li .sub-menu a
 {
+    font-family: var(--f-secondary);
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    transition: all ease 0.1s;
+}
+.sideBar .MenuLists li .sub-menu :hover
+{
+    color: #fff;
+    
+}
+ .MenuLists.close li .sub-menu 
+{
+    position: absolute;
+    left: 0.5%;
+    top: 0;
+    margin-top: 10rem;
+    
+}
+.MenuLists li .money
+{
+    text-decoration: none;
+    color: black;
+    background: rgba(4, 100, 243, 0.568);
+    border-radius: 10px;
+    margin-left: 100%;
     display: none;
 }
-.showinnerLists
+.sideBar .MenuLists li .money 
 {
-    display: block;
+    font-family: var(--f-secondary);
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+    white-space: nowrap;
 }
+.MenuLists.close li .money 
+{
+    position: absolute;
+    left: 0.5%;
+    top: 0;
+    margin-top: 20rem;
+}
+
+
 .container
 {
     

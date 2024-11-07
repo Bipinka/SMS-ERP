@@ -38,7 +38,9 @@
             <h3 class="schoolName">
               Lumbini Engineering, Management and Science College
             </h3>
-            <p class="address" style="color: white;">Tilottama-7, Bhalwari, Rupandehi, Nepal</p>
+            <p class="address" style="color: white">
+              Tilottama-7, Bhalwari, Rupandehi, Nepal
+            </p>
           </div>
 
           <div class="navIcons"></div>
@@ -54,48 +56,59 @@
           <ul>
             <li>
               <i class="bx bx-menu-alt-right toggle"></i>
-              Menu
+              <span class="Menu">Menu</span>
             </li>
             <li>
               <i class="bx bx-home"></i>
-              Dashboard
+              <span class="dash">Dashboard</span>
             </li>
             <li>
-              <i class="bx bx-cog"></i>
-              General Settings
-              <ul class="innerLists">
-                <li>Institute Profile</li>
-                <li>Fee</li>
+              <div class="nav-link">
+                <i class="bx bx-cog"></i>
+                <span>General Setting</span>
+                <i class="bx bx-chevron-down arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <!--links-->
+                <li>
+                  <a href="#">instituteProfile</a>
+                </li>
+                <li>
+                  <a href="#">Fees</a>
+                </li>
               </ul>
             </li>
 
             <li>
               <i class="bx bx-clipboard"></i>
-              Classes
+              <span class="room">Classes</span>
             </li>
             <li>
               <i class="bx bx-book-content"></i>
-              Subjects
+              <span class="subject">Subjects</span>
             </li>
             <li>
               <i class="bx bx-child"></i>
-              Students
+              <span class="std">Students</span>
             </li>
             <li>
               <i class="bx bx-male-female"></i>
-              Employees
+              <span class="staff">Staffs</span>
             </li>
             <li>
-              <i class="bx bxs-user-account"></i>
-              Accounts
-              <ul class="money">
-                <li>Fees</li>
-                <li>Salary</li>
+              <div class="nav-link">
+                <i class="bx bxs-user-account"></i>
+                <span>Accounts</span>
+                <i class="bx bx-chevron-down arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a href="#">Fees</a></li>
+                <li><a href="#">Salary</a></li>
               </ul>
             </li>
             <li>
               <i class="bx bxs-report"></i>
-              Reports
+              <span class="repo">Reports</span>
             </li>
           </ul>
         </div>
@@ -103,21 +116,19 @@
 
       <div class="container">
         <div class="totalstudents">
-          <i class='bx bxs-user'></i>
-          <h3> Total students :</h3>
-          <div id="stdno" style="color: white;"></div>
+          <i class="bx bxs-user"></i>
+          <h3>Total students :</h3>
+          <div id="stdno" style="color: white"></div>
         </div>
         <div class="totalemployees">
-          <i class='bx bxs-group'></i>
+          <i class="bx bxs-group"></i>
           <h3>Total Employees :</h3>
         </div>
         <div class="totalcourses">
-          <i class='bx bxs-book-content'></i>
-          <h3>
-            Courses:
-          </h3>
+          <i class="bx bxs-book-content"></i>
+          <h3>Courses:</h3>
         </div>
-    </div>
+      </div>
       <!-- Container -->
       <div class="graph-container">
         <canvas id="Bar"></canvas>
@@ -125,8 +136,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./assets/javascript/bar.js"></script>
-    
-
-    
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
