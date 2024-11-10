@@ -1,16 +1,19 @@
-.graph-container
-{
-     height: 100%;
-     width: 50rem;
-   margin-left: 15rem;
-   margin-top: -16rem;
-   font-family: var(--ff-secondary);
-   border-radius: 10px;
-   background-color: #98d8f158;
+.graph-container {
+  height: 100%;
+  width: 40rem;
+  margin-left: 18rem;
+  margin-top: 80px;
+  font-family: var(--ff-secondary);
+  border-radius: 10px;
+  background-color: #98d8f158;
+  
 }
-.graph-container:hover
-{
-    box-shadow:  3px 3px 10px #bebdbd,
-    -3px 3px 20px rgb(148, 146, 146);
-transition: linear 0.2s;
+.graph-container:hover {
+  box-shadow: 3px 3px 10px #bebdbd, -3px 3px 20px rgb(148, 146, 146);
+  transition: linear 0.2s;
+}
+@media screen and (max-width: 800px) {
+  .graph-container {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
