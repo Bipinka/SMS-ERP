@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --sidebar-color: #e5f1ff;
+    --background-color: #99aee7;
+    --button-color: #ffa256;
+    --text-color: #585858;
+
+    /* border radius */
+    --border-radius-1: .5rem;
+    --border-radius-2: .8rem;
+    --border-radius-3: 1rem;
+    --border-radius-4: 2rem;
+    
+    /* box shadow */
+    --box-shadow-1: 0.5px 1px 5px 1px #99aee7;
+
+    /*blue shades*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+
+    /*grey shades*/
+    --clr-grey-1: hsl(210, 22%, 49%);
+    --clr-grey-2: hsl(209, 23%, 60%);
+    --clr-grey-3: hsl(211, 27%, 70%);
+    --clr-grey-4: hsl(210, 31%, 80%);
+    --clr-grey-5: hsl(212, 33%, 89%);
+    --clr-grey-6: hsl(210, 36%, 96%);
+    /*font*/
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --spacing: 0.1rem;
+}
+.allIcons {
+    font-size: 1.2rem;
+}
+
+.allIcons:hover,
+select:hover,
+button:hover,
+.menu-item-title:hover,
+.sub-item:hover {
+    cursor: pointer;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.header {
+    height: 5vh;
+    max-width: 95vw;
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-1);
+    background-color: var(--background-color);
+}
+.title {
+    width: 390px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subTitle {
+    display: flex;
+    align-items: center;
+}
+.addNewIcon {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/* form */
+fieldset {
+    height: 8vh;
+    width: 100%;
+    text-align: left;
+    border-radius: var(--border-radius-4);
+    margin-top: 2vh;
+}
+legend {
+    margin-left: 1rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius-4);
+    font-size: 0.7em;
+    padding: 0 0.5rem;
+}
+input,select {
+    height: 1rem;
+    width: 98%;
+    font-size: 0.9rem;
+    border-radius: var(--border-radius-4);
+    border: none;
+    padding: 1rem;   
+}
+
+
+/* Submit Button */
+
+.submit,
+.reset {
+    height: 6vh;
+    min-width: 12vw;
+    border-radius: var(--border-radius-4);
+    border: none;
+    padding: 0 1rem;
+    margin-top: 5vh;
+}
+
+/* .submit {
+    background-color: var(--button-color);
+} */
+
+/* Reset Button */
+.submit {
+    background-color: var(--button-color);
+}
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
