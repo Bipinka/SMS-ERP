@@ -45,56 +45,160 @@
     <!-- Body -->
 
     <div class="main">
-        <div class="sideBar">
-            <div class="MenuLists">
-                <ul>
-                    <li>
-                        <i class='bx bx-menu-alt-right toggle'></i>
-                        Menu
-                    </li>
-                    <li>
-                        <i class='bx bx-home'></i>
-                        Dashboard
-                    </li>
-                    <li>
-                        <i class='bx bx-cog' ></i>
-                        General Settings
-                        <ul class="innerLists">
-                            <li>Institute Profile</li>
-                            <li>Fee</li>
-                        </ul>
-                    </li>
-    
-                    <li>
-                        Classes
-                    </li>
-                    <li>
-                        <i class='bx bx-book-content'></i>
-                        Subjects
-                    </li>
-                    <li>
-                        Students
-                    </li>
-                    <li>
-                        Employees
-                    </li>
-                    <li>
-                        Accounts
-                        <ul>
-                            <li>Fees</li>
-                            <li>Salary</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Reports
-                    </li>
-                </ul>
+        <!-- Sidebar -->
+        <aside class="sideBar">
+            <div class="menu-item" id="fix-menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-menu-alt-right toggle allIcons'></i>
+                    <span>Menu</span>
+                    <i class="fa-solid fa-angle-left" id="minimizeSidebar"></i>
+                </div>
             </div>
-        </div>
-
-        <!-- Container -->
+            <div class="menu-item" id="menu-item-second">
+                <div class="menu-item-title">
+                    <i class='bx bx-home allIcons'></i>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-cog allIcons'></i>
+                    <span>General Settings</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">Institute Profile</div>
+                        <div class="sub-item">Fee</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <span>Classes</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-book-content allIcons'></i>
+                    <span>Subjects</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-children"></i>
+                    <span>Students</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">All Students</div>
+                        <div class="sub-item">Add Student</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Employees</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">All Employees</div>
+                        <div class="sub-item">Add Employees</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-file-invoice-dollar allIcons"></i>
+                    <span>Accounts</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">Fees</div>
+                        <div class="sub-item">Salary</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-layer allIcons'></i>
+                    <span>Assignments</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Exams</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Results</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-calendar-edit allIcons'></i>
+                    <span>Timetable</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-calendar-star allIcons'></i>
+                    <span>Events</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-message-square-dots allIcons'></i>
+                    <span>Messages</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bxs-report allIcons'></i>
+                    <span>Reports</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+        
+            <!-- Others -->
+            <div class="menu-item">
+                <hr class="line">
+                <div class="menu-item-title">
+                    <span>Others</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>Profile</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Logout</span>
+                </div>
+            </div>
+        </aside>
         <div class="container">
-           
+
         </div>
     </div>
 </body>

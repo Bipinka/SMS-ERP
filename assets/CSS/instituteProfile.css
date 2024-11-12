@@ -3,28 +3,6 @@ form {
     margin: auto;
     text-align: center;
 }
-fieldset {
-    height: 8vh;
-    width: 100%;
-    text-align: left;
-    border-radius: var(--border-radius-4);
-    margin-top: 2vh;
-}
-legend {
-    margin-left: 1rem;
-    background-color: var(--background-color);
-    border-radius: var(--border-radius-4);
-    font-size: 0.7em;
-    padding: 0 0.5rem;
-}
-input,select {
-    height: 1rem;
-    width: 98%;
-    font-size: 0.9rem;
-    border-radius: var(--border-radius-4);
-    border: none;
-    padding: 1rem;   
-}
 .logoFieldset {
     height: 23vh;
 }

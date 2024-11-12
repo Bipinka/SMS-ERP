@@ -1,0 +1,26 @@
+.invoice {
+    width: 40vw;
+    margin: 100px auto;
+    border: 1px solid black;
+}
+
+.instituteInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    height: 50vh;
+    width: 40vw;
+    border-top: 1px solid black;
+}
+table td {
+    border: 1px solid black;
+}
+.serialNo {
+    text-align: center;
+}
+.particular {
+    padding-left: 100px;
+}
