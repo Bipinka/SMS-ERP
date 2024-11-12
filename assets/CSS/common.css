@@ -20,6 +20,24 @@
     
     /* box shadow */
     --box-shadow-1: 0.5px 1px 5px 1px #99aee7;
+
+    /*blue shades*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+
+    /*grey shades*/
+    --clr-grey-1: hsl(210, 22%, 49%);
+    --clr-grey-2: hsl(209, 23%, 60%);
+    --clr-grey-3: hsl(211, 27%, 70%);
+    --clr-grey-4: hsl(210, 31%, 80%);
+    --clr-grey-5: hsl(212, 33%, 89%);
+    --clr-grey-6: hsl(210, 36%, 96%);
+    /*font*/
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --spacing: 0.1rem;
 }
 .allIcons {
     font-size: 1.2rem;
@@ -101,11 +119,16 @@ input,select {
     margin-top: 5vh;
 }
 
-.submit {
+/* .submit {
     background-color: var(--button-color);
-}
+} */
 
 /* Reset Button */
 .submit {
     background-color: var(--button-color);
 }
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
