@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students | Add New</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="../../assets/CSS/common.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/CSS/newStudent.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- BoxIcons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h4>Students</h4>
+            <span>|</span>
+            <div class="subTitle">
+                <i class="fa-regular fa-address-card allIcons"></i>
+                <span>-</span>
+                <p>Admission Form</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="formContainer">
+        <div class="formHeader">
+            <h2>Admission Form</h2>
+            <p>Fields Marked * are required.</p>
+        </div>
+        <form action="">
+            <div class="studentInfo">
+                <div class="infoHeader">
+                    <h5>1. Student Information</h5>
+                </div>
+                <div class="fieldsetDiv">
+                    <fieldset>
+                        <legend>First Name*</legend>
+                        <input type="text" name="studentFirstName" id="studentFirstName" placeholder="First Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Middle Name - (Optional)</legend>
+                        <input type="text" name="studentMiddleName" id="studentMiddleName" placeholder="Middle Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Last Name*</legend>
+                        <input type="text" name="studentLastName" id="studentLastName" placeholder="Last Name" required>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Gender*</legend>
+                        <select name="selectGender" id="selectGender">
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Others</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Select Class*</legend>
+                        <select name="selectClass" id="selectClass">
+                            <option value="">Class 1</option>
+                        </select>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Photo - (Optional)</legend>
+                        <input type="file" name="studentPhoto" id="studentPhoto">
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Date of Admission*</legend>
+                        <input type="date" name="addDate" id="addDate" required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Discount in Fee*</legend>
+                        <input type="number" name="feeDiscount" id="feeDiscount" placeholder="Discount In Fee (in %)" required>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="personalInfo">
+                <div class="infoHeader">
+                    <h5>2. Other Information</h5>
+                </div>
+                <div class="fieldsetDiv">
+                    <fieldset>
+                        <legend>Date Of Birth*</legend>
+                        <input type="date" name="birthDate" id="birthDate" required>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Birth Certificate - (Optional)</legend>
+                        <input type="file" name="birthCertificate" id="birthCertificate" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Religion - (Optional)</legend>
+                        <select name="religion" id="religion">
+                            <option value="1">Hindu</option>
+                        </select>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Cast*</legend>
+                        <select name="Cast" id="cast">
+                            <option value="">Newar</option>
+                        </select>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Blood Group - (Optional)</legend>
+                        <select name="bloodGroup" id="bloodGroup">
+                            <option value="">A+</option>
+                        </select>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Any Identification Mark?</legend>
+                        <input type="text" name="identifyMark" id="identifyMark">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Transfer Certificate - (Optional)</legend>
+                        <input type="file" name="transferCertificate" id="transferCertificate" required>
+                    </fieldset>
+
+                </div>
+            </div>
+
+            <div class="parentsInfo">
+                <div class="infoHeader">
+                    <h5>3. Parents' Information</h5>
+                </div>
+                <div class="fieldsetDiv">
+                    <fieldset>
+                        <legend>Father's First Name*</legend>
+                        <input type="text" name="fatherFirstName" id="fatherFirstName" placeholder="Father's First Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Middle Name - (Optional)</legend>
+                        <input type="text" name="fatherMiddleName" id="fatherMiddleName" placeholder="Father's Middle Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Last Name*</legend>
+                        <input type="text" name="fatherLastName" id="fatherLastName" placeholder="Father's Last Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mother's First Name*</legend>
+                        <input type="text" name="motherFirstName" id="motherFirstName" placeholder="Mother's First Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Middle Name - (Optional)</legend>
+                        <input type="text" name="motherMiddleName" id="mothertMiddleName" placeholder="Mother's Middle Name" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Last Name*</legend>
+                        <input type="text" name="motherLastName" id="motherLastName" placeholder="Mother's Last Name" required>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Contact Number*</legend>
+                        <input type="number" name="contactNum" id="contactNum" placeholder="Contact Number" required>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Email Address - (Optional)</legend>
+                        <input type="email" name="parentEmail" id="parentEmail" placeholder="Email Address">
+                    </fieldset>
+    
+                </div>
+            </div>
+
+            <div class="emergencyContact">
+                <div class="infoHeader">
+                    <h5>4. Emergency Contact Information</h5>
+                </div>
+                <div class="fieldsetDiv">
+                    <fieldset>
+                        <legend>Contact Number 1*</legend>
+                        <input type="num" name="emergencyContact1" id="emergencyContact1" placeholder="Emergency Contact 1" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Number 2*</legend>
+                        <input type="num" name="emergencyContact2" id="emergencyContact2" placeholder="Emergency Contact 2" required>
+                    </fieldset>
+    
+                </div>
+            </div>
+
+            <div class="formButtons">
+                <button type="reset" class="reset"><i class="fa-solid fa-rotate"></i> Reset</button>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>

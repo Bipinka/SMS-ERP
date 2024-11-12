@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Profile</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="../../assets/CSS/common.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/CSS/instituteProfile.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- BoxIcons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h4>General Settings</h4>
+            <span>|</span>
+            <div class="subTitle">
+                <i class='bx bx-building-house allIcons'></i>
+                <span>-</span>
+                <p>Institute Profile</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form action="">
+            <div>
+                <h1>Update Profile</h1>
+            </div>
+            <div class="box">
+                <div class="sideA">
+                    <fieldset class="logoFieldset">
+                        <legend>Institute Logo*</legend>
+                        <div class="logoDiv">
+                            <div class="logoImg">
+                                <p>Logo</p>
+                            </div>
+                            <div class="chooseButton">
+                                <input type="file" id="logo" accept="image/*" style="display:none;" required>
+                                <button id="uploadButton" class="chooseLogo"><i class='bx bx-image-add'></i> Choose Logo</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Name of Institute*</legend>
+                        <input type="text" name="name" id="name" placeholder="Institute Name" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Target Line*</legend>
+                        <input type="text" name="targetLine" id="targetLine" placeholder="Target Line" required>
+                    </fieldset>
+                </div>
+        
+                <div class="sideB">
+                    <fieldset>
+                        <legend>Phone Number*</legend>
+                        <input type="number" name="Phone" id="phone" placeholder="Phone Number" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Website</legend>
+                        <input type="text" name="Website" id="website" placeholder="Website">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Country*</legend>
+                        <select name="Country" id="country">
+                            <option value="1">Nepal</option>
+                            <option value="2">India</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Address*</legend>
+                        <input type="text" name="address" id="address" placeholder="Address" required>
+                    </fieldset>
+                </div>
+            </div>
+            <button type="submit" class="submit">
+                <i class="fa-solid fa-rotate"></i> Update Profile
+            </button>
+        </form>
+        <div class="profileView">
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students | All Students</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="../../assets/CSS/common.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/CSS/allStudents.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- BoxIcons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h4>Students</h4>
+            <span>|</span>
+            <div class="subTitle">
+                <i class="fa-solid fa-user-group allIcons"></i>
+                <span>-</span>
+                <p>All Students</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="searchStudent">
+            <form action="">
+                <fieldset>
+                    <input type="search" name="searchStudent" id="searchStudent" placeholder="Search Student" required>
+                </fieldset>
+            </form>
+            <div class="searchClass">
+                <select name="selectClass" id="selectClass">
+                    <option value="">View All Students By Class</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                </select>
+            </div>
+        </div>
+        <div class="classInfo">
+            <h2>Class 1</h2>
+        </div>
+        <div class="allStudents">
+            <div class="studentDetails">
+                <div class="studentPhoto">
+                    Photo
+                </div>
+                <div class="studentIdentity">
+                    <p class="idNumber">
+                        01-A-102
+                    </p>
+                    <p>
+                        Student Name
+                    </p>
+                </div>
+                <hr>
+                <div class="editIcons">
+                    <i class="fa-regular fa-eye allIcons" id="seeStudentDetails"></i>
+                    <i class="fa-regular fa-pen-to-square allIcons" id="editStudentDetails"></i>
+                    <i class="fa-regular fa-trash-can allIcons"  id="deleteStudentDetails"></i>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+</body>
+</html>    

@@ -1,0 +1,78 @@
+body {
+  background: #ffffff;
+}
+
+.container {
+  width: 90vw;
+  margin: 20px auto;
+}
+form {
+  height: 55vh;
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-3);
+  background: #fbf8f8;
+  box-shadow:  20px 20px 60px #949494,
+               -20px -20px 60px #ffffff;
+}
+fieldset {
+  height: 8vh;
+  width: 90%;
+  text-align: left;
+  margin-top: 2vh;
+  border: none;
+}
+legend {
+  margin-left: 1rem;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius-4);
+  font-size: 0.7em;
+  padding: 0 0.5rem;
+  
+}
+input,
+select {
+  height: 1rem;
+  width: 70%;
+  font-size: 0.9rem;
+  border-radius: var(--border-radius-4);
+  border: none;
+  padding: 1rem;
+  background:  #cacaca;
+  box-shadow: 20px 20px 60px #b8b8b8, -20px -20px 60px #ffffff;
+}
+.container img 
+{
+    position:absolute;
+    height: 40%;
+    width: 20%;
+    margin-left: 45rem;
+    z-index: 1;
+    opacity: 90%;
+}
+.submit {
+  height: 6vh;
+  min-width: 12vw;
+  background-color: var(--button-color);
+  border-radius: var(--border-radius-4);
+  border: none;
+  padding: 0 1rem;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.2s;
+}
+.submit:hover {
+  background-color: rgb(255, 123, 0);
+}
+
+@media (width < 900px) {
+  form {
+    width: 90vw;
+  }
+}
