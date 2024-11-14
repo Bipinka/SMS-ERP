@@ -36,10 +36,13 @@
 
           <div class="schoolDetails">
             <h3 class="schoolName">
-              Lumbini Engineering, Management and Science College
+                Institute Name
             </h3>
-            <p class="address" style="color: white">
-              Tilottama-7, Bhalwari, Rupandehi, Nepal
+            <p class="address">
+              Address of Institute
+            </p>
+            <p class="targetLine">
+                "Target Line of Institute"
             </p>
           </div>
 
@@ -206,36 +209,44 @@
         
         
         <div class="container">
-            <div class="totalstudents">
-              <i class="bx bxs-graduation"></i>
-              <h3>Total students :</h3>
-              <div id="stdno" style="color: white"></div>
-            </div>
-            <div class="totalemployees">
-              <i class="bx bxs-group"></i>
-              <h3>Total Employees :</h3>
-            </div>
-            <div class="totalcourses">
-              <i class="bx bxs-book-content"></i>
-              <h3>Courses:</h3>
-            </div>
+            <div class="innerContainer">
+                <div class="gridContainer">
+                    <div class="gridItem" id="totalStudents">
+                        <i class="bx bxs-graduation"></i>
+                        <h3>Total students :</h3>
+                        <div id="stdno" style="color: white"></div>
+                    </div>
+                    <div class="gridItem" id="totalEmployees">
+                        <i class="bx bxs-group"></i>
+                        <h3>Total Employees :</h3>
+                    </div>
+                    <div class="gridItem" id="totalCourses">
+                        <i class="bx bxs-book-content"></i>
+                        <h3>Courses:</h3>
+                    </div>
+            
+                    <div class="gridItem" id="panel">
+                        <div class="panelText">
+                            <span>welcome to admin panel</span>
+                            <p>This is where you can manage all.</p>
+                        </div>
+                        <div class="panelImage">
+                            <img src="./assets/images/background.png" alt="#"/>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- graph Container -->
     
-            <div class="panel">
-              <span>welcome to admin panel</span>
-              <p>
-                This is where you can manage all.
-              </p>
-             <img src="./assets/images/background.png" alt="#"/>
+                <div class="graph-container">
+                  <canvas id="Bar"></canvas>
+                </div>
+    
+                <div class="checkDiv">
+                    <p>This is check Div.</p>
+                </div>
             </div>
-      
-          </div>
-    
-          
-    
-          <!-- graph Container -->
-          <div class="graph-container">
-            <canvas id="Bar"></canvas>
-          </div>
+        </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
