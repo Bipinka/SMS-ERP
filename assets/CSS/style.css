@@ -7,10 +7,10 @@ body {
 }
 
 .AllHeader {
+    min-height: 11vh;
     width: 100vw;
     margin: auto;
     position: fixed;
-    background: rgb(10,21,70);
     background: linear-gradient(45deg, rgb(53, 78, 191) 26%, rgba(65,210,240,1) 100%);
     z-index: 1;
 }
@@ -19,225 +19,158 @@ body {
     min-height: 11vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
-.schoolDetails h3
-{
+.schoolDetails {
     color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.schoolDetails .address {
+    font-size: 0.9rem;
+}
+.schoolDetails  .targetLine {
+    font-size: 0.7rem;
+}
+.main {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 11vh;
 }
 .sideBar {
+    height: 89vh;
+    min-width: 240px;
+    background-color: var(--sidebar-color);
+    overflow-y: auto;  
+    overflow-x: hidden;
     position: fixed;
-    padding-top: 4rem;
-    width: 14vw;
-    background-color: #bfd7ff;
-    height: 100%;
-    box-shadow: rgb(158, 157, 157) 1px 1px 1px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
 }
-
-.MenuLists li   
-{
-   
-   font-family: var(--f-secondary);
-   font-size: 18px;
-    text-transform: capitalize;
-    display: block;
-    padding: 0.75rem ;
-    cursor: pointer;
+.menu-item,
+.menu-item-title span {
+    margin: 10px;
+    color: var(--text-color);
+}
+.menu-item-title span {
+    width: 150px;
+}
+.menu-item-title {
+    height: 30px;
+    display: flex;
     align-items: center;
-    grid-area: 1 / 1 ;
-   border-radius: 0 20px;
-   transition: all ease 0.1s ;
-   
 }
-.sideBar .MenuLists li .nav-link .arrow
-{
-    
-    font-size: 24px;
-   
+.sub-menu {
+    margin-left: 35px;
 }
-
-
-.MenuLists li:hover
-{
-    background: rgb(101, 101, 243);
+.sub-item {
+    margin-top: 5px;
+}
+#fix-menu-item {
+    position: fixed;
+    background-color: #5bb5ff;
     color: #fff;
-    border-radius: 0 20px;
-  
+    margin: 0;
+    padding-left: 10px;
+    width: 223px;
+    height: 35px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#fix-menu-item span {
+    color: #ffffff;
+}
+#menu-item-second {
+    margin-top: 40px;
+}
+.line {
+    height: 2px;
+    background-color: #909090;
+    border: none;
+}
+.checkDiv {
+    height: 500px;
+    background-color: yellow;
 }
 
- .sideBar .MenuLists li .sub-menu 
-{
-    text-decoration: none; 
-    display: none;
-   
-}
+/* container */
 
-.sideBar .MenuLists li.showmenu .sub-menu   {
-    display: block;
-    
+.container {
+    height: 89vh;
+    min-width: 85vw;
+    position: fixed;
+    left: 240px;
+    overflow-y: auto;  
+    overflow-x: hidden;
 }
-
-.sideBar .MenuLists li .sub-menu a
-{
-    font-family: var(--f-secondary);
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    justify-content: space-evenly;
-    white-space: nowrap;
-    transition: all ease 0.1s;
-    backdrop-filter: blur(10px);
+.innerContainer {
+    width: 60%;
+    height: 40vh;
+    margin: 10vh auto;
 }
-.sideBar .MenuLists li .sub-menu :hover
-{
-    color: #fff;
-    background-color: #2196f3d6;
-   
-    
-}
- .MenuLists.close li .sub-menu 
-{
-    position: absolute;
-    left: 0.5%;
-    top: 0;
-    margin-top: 10rem;
-    
-}
-.MenuLists li .money
-{
-    text-decoration: none;
-    color: black;
-    background: rgba(4, 100, 243, 0.568);
-    border-radius: 10px;
-    margin-left: 100%;
-    display: none;
-}
-.sideBar .MenuLists li .money 
-{
-    font-family: var(--f-secondary);
-    text-decoration: none;
-    color: black;
-    justify-content: space-evenly;
-    white-space: nowrap;
-}
-.MenuLists.close li .money 
-{
-    position: absolute;
-    left: 0.5%;
-    top: 0;
-    margin-top: 20rem;
-}
-
-
-.container
-{
-    
+.gridContainer {
+    width: 50vw;
+    height: 40vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr) 0fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  
+    gap: 1.5rem;
 }
-.totalstudents
-{
-  
-    height: 8rem;
-    width: 15rem;
+.gridItem {
     background: #2196f3d6;
     border-radius: 12px ;
-    grid-area: 2 / 1 / 3 / 2;
-    margin-left: 18rem;
 }
-.totalemployees
-{
-
-    height: 8rem;
-    width: 15rem;
-    background: #2196f3d6;
-    border-radius: 12px;
-    grid-area: 2 / 2 / 3 / 3;
-    margin-left: 80px;
-}
-.totalcourses
-{
-
-    height: 8rem;
-    width: 15rem;
-    background: #2195f3d6;
-    border-radius:12px;
-    grid-area: 2 / 3 / 3 / 4;
-    margin-left: -100px;
-}
-.totalstudents:hover,
-.totalemployees:hover,
-.totalcourses:hover
-{
-
+.gridItem:hover,
+.graph-container:hover {
     box-shadow:  3px 3px 10px #bebdbd,
     -3px 3px 20px rgb(148, 146, 146);
-transition: linear 0.2s;
-} 
-
-.totalstudents i, .totalemployees i, .totalcourses i
-{
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.gridItem i {
     color: white;
     margin-left: 20px;
     font-size: 50px;
-   padding-top: 10px;
+    padding-top: 10px;
 }
-.totalstudents h3, .totalemployees h3, .totalcourses h3
+.gridItem h3
 {
     color: white;
     padding-left: 10px;
 }
-.container .panel
-{
+.gridContainer #panel {
     height: 8rem;
-    width: 54rem;
+    width: 100%;
     background-color: #f9c8c9d5;
-  margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 30px;
     border-radius: 10px;
-    grid-area: 4 / 1 / 5 / 4;
-    margin-left: 18rem; 
-   
+    grid-column-start: span 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
-.container .panel span
-{
-   
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        padding-left: 10px;
-        justify-content: space-evenly;
-       
-      
-      
+.gridContainer #panel .panelText {
+    width: 60%;
+    margin: 0 30px ;
 }
-.container .panel p
-{
+.gridContainer .panelImage {
+    height: 8rem;
+    width: 200px;
+}
+.gridContainer #panel span {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.gridContainer #panel p {
     font-family: var(--ff-secondary);
     font-size: 18px;
-     text-transform: capitalize;
-    justify-content: space-evenly;
-    padding-left: 10px;
+    text-transform: capitalize;
     padding-top: 5px;
 }
-.container .panel img
-{
-    position: absolute;
-    height: 10rem;
-    width: 12%;
-    margin-top: -100px;
-    margin-left: 28rem;
-}
-/* @media screen and (max-width: 500px) {
-     .container   {
-      width: 50%; 
 
-    }
-  } */
+.gridContainer #panel img {
+    width: 100%;
+    margin-top: -30px;
+}
+
