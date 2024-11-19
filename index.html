@@ -36,10 +36,13 @@
 
           <div class="schoolDetails">
             <h3 class="schoolName">
-              Lumbini Engineering, Management and Science College
+                Institute Name
             </h3>
-            <p class="address" style="color: white">
-              Tilottama-7, Bhalwari, Rupandehi, Nepal
+            <p class="address">
+              Address of Institute
+            </p>
+            <p class="targetLine">
+                "Target Line of Institute"
             </p>
           </div>
 
@@ -51,103 +54,205 @@
     <!-- Body -->
 
     <div class="main">
-      <div class="sideBar">
-        <div class="MenuLists">
-          <ul>
-            <li>
-              <i class="bx bx-menu-alt-right toggle"></i>
-              <span class="Menu">Menu</span>
-            </li>
-            <li>
-              <i class="bx bx-home"></i>
-              <span class="dash">Dashboard</span>
-            </li>
-            <li>
-              <div class="nav-link">
-                <i class="bx bx-cog"></i>
-                <span>General Setting</span>
-                <i class="bx bx-chevron-down arrow"></i>
-              </div>
-              <ul class="sub-menu">
-                <!--links-->
-                <li>
-                  <a href="#">instituteProfile</a>
-                </li>
-                <li>
-                  <a href="#">Fees</a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <i class="bx bx-clipboard"></i>
-              <span class="room">Classes</span>
-            </li>
-            <li>
-              <i class="bx bx-book-content"></i>
-              <span class="subject">Subjects</span>
-            </li>
-            <li>
-              <i class="bx bxs-user"></i>
-              <span class="std">Students</span>
-            </li>
-            <li>
-              <i class="bx bx-male-female"></i>
-              <span class="staff">Staffs</span>
-            </li>
-            <li>
-              <div class="nav-link">
-                <i class="bx bxs-user-account"></i>
-                <span>Accounts</span>
-                <i class="bx bx-chevron-down arrow"></i>
-              </div>
-              <ul class="sub-menu">
-                <li><a href="#">Fees</a></li>
-                <li><a href="#">Salary</a></li>
-              </ul>
-            </li>
-            <li>
-              <i class="bx bxs-report"></i>
-              <span class="repo">Reports</span>
-            </li>
-          </ul>
+        <!-- Sidebar -->
+        <aside class="sideBar">
+            <div class="menu-item" id="fix-menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-menu-alt-right toggle allIcons'></i>
+                    <span>Menu</span>
+                    <i class="fa-solid fa-angle-left" id="minimizeSidebar"></i>
+                </div>
+            </div>
+            <div class="menu-item" id="menu-item-second">
+                <div class="menu-item-title">
+                    <i class='bx bx-home allIcons'></i>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-cog allIcons'></i>
+                    <span>General Settings</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">Institute Profile</div>
+                        <div class="sub-item">Fee</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <span>Classes</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-book-content allIcons'></i>
+                    <span>Subjects</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-children"></i>
+                    <span>Students</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">All Students</div>
+                        <div class="sub-item">Add Student</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Employees</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">All Employees</div>
+                        <div class="sub-item">Add Employees</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-file-invoice-dollar allIcons"></i>
+                    <span>Accounts</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+                    <div class="sub-menu">
+                        <div class="sub-item">Fees</div>
+                        <div class="sub-item">Salary</div>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-layer allIcons'></i>
+                    <span>Assignments</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Exams</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Results</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-calendar-edit allIcons'></i>
+                    <span>Timetable</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-calendar-star allIcons'></i>
+                    <span>Events</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bx-message-square-dots allIcons'></i>
+                    <span>Messages</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class='bx bxs-report allIcons'></i>
+                    <span>Reports</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                    <i class='bx bx-plus dropdownPlus'></i>
+                </div>
+            </div>
+        
+            <!-- Others -->
+            <div class="menu-item">
+                <hr class="line">
+                <div class="menu-item-title">
+                    <span>Others</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>Profile</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Logout</span>
+                </div>
+            </div>
+        </aside>
+        
+        
+        <div class="container">
+            <div class="innerContainer">
+                <div class="gridContainer">
+                    <div class="gridItem" id="totalStudents">
+                        <i class="bx bxs-graduation"></i>
+                        <h3>Total students :</h3>
+                        <div id="stdno" style="color: white"></div>
+                    </div>
+                    <div class="gridItem" id="totalEmployees">
+                        <i class="bx bxs-group"></i>
+                        <h3>Total Employees :</h3>
+                    </div>
+                    <div class="gridItem" id="totalCourses">
+                        <i class="bx bxs-book-content"></i>
+                        <h3>Courses:</h3>
+                    </div>
+            
+                    <div class="gridItem" id="panel">
+                        <div class="panelText">
+                            <span>welcome to admin panel</span>
+                            <p>This is where you can manage all.</p>
+                        </div>
+                        <div class="panelImage">
+                            <img src="./assets/images/background.png" alt="#"/>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- graph Container -->
+    
+                <div class="graph-container">
+                  <canvas id="Bar"></canvas>
+                </div>
+    
+                <div class="checkDiv">
+                    <p>This is check Div.</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="totalstudents">
-          <i class="bx bxs-graduation"></i>
-          <h3>Total students :</h3>
-          <div id="stdno" style="color: white"></div>
-        </div>
-        <div class="totalemployees">
-          <i class="bx bxs-group"></i>
-          <h3>Total Employees :</h3>
-        </div>
-        <div class="totalcourses">
-          <i class="bx bxs-book-content"></i>
-          <h3>Courses:</h3>
-        </div>
-
-        <div class="panel">
-          <span>welcome to admin panel</span>
-          <p>
-            This is where you can manage all.
-          </p>
-         <img src="./assets/images/background.png" alt="#"/>
-        </div>
-  
-      </div>
-
-      
-
-      <!-- graph Container -->
-      <div class="graph-container">
-        <canvas id="Bar"></canvas>
-      </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./assets/javascript/bar.js"></script>
     <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
 </body>
 </html>

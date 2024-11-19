@@ -7,8 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 :root {
+    --sidebar-color: #e5f1ff;
     --background-color: #99aee7;
     --button-color: #ffa256;
+    --text-color: #585858;
 
     /* border radius */
     --border-radius-1: .5rem;
@@ -43,7 +45,9 @@
 
 .allIcons:hover,
 select:hover,
-button:hover {
+button:hover,
+.menu-item-title:hover,
+.sub-item:hover {
     cursor: pointer;
 }
 input:focus,
@@ -76,6 +80,30 @@ button:focus {
 .addNewIcon {
     font-size: 2rem;
     font-weight: 100;
+}
+
+/* form */
+fieldset {
+    height: 8vh;
+    width: 100%;
+    text-align: left;
+    border-radius: var(--border-radius-4);
+    margin-top: 2vh;
+}
+legend {
+    margin-left: 1rem;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius-4);
+    font-size: 0.7em;
+    padding: 0 0.5rem;
+}
+input,select {
+    height: 1rem;
+    width: 98%;
+    font-size: 0.9rem;
+    border-radius: var(--border-radius-4);
+    border: none;
+    padding: 1rem;   
 }
 
 

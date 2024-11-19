@@ -5,7 +5,7 @@ const ctx = document.getElementById("Bar");
 const barChart = new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ['ATTANDENCE'],
+    labels: ['ATTENDANCE'],
     datasets: [
       {
         label: "students",

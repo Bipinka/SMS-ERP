@@ -10,6 +10,7 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .searchStudent fieldset {
     border: none;
@@ -20,6 +21,7 @@
     width: 20vw;
     border-radius: var(--border-radius-3);
     padding: 0 0.5rem;
+    box-shadow: var(--box-shadow-1)
 }
 
 /* Display Students */
