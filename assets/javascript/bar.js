@@ -34,7 +34,7 @@ const barChart = new Chart(ctx, {
       },
        {
         label:'teachers',
-         data:[16],
+        data:[16],
         borderWidth:0.5,
         borderRadius: 10,
         backgroundColor:["#a4161a"],
